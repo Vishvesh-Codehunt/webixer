@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Karla', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.dashboard-header{
+    color:#EEAA7B;
+    font-weight:600;
+    text-align:center;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size:60px;
+}
+.second{
+    position: relative;
+    left:20px;
+}
+.third{
+    position:relative;
+    left:40px;
+}
+.card{
+    border:1px solid #1a1a1a;
+}
+.card-img-top{
+    height:200px;
+}
+.main-row{
+    margin-top:70px;
+    position:relative;
+    left:70px;
+    margin-bottom:50px;
+}
+.card-body{
+    background-color:#1a1a1a;
+    color:white;
+}
+.card-title{
+    color:#EEAA7B;
+    font-weight:600;
+    font-size:24px;
+}
+.template-btn{
+    background-color:#EEAA7B;
+    color:black;
+    border:1px solid #EEAA7B;
+    margin-top:20px;
+}

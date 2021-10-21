@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Karla', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#banner{
+    background-image: url(../static/Images/banner.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:600px;
+    width:100%;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color:red;
+}
+.first-header{
+    text-align:center;
+    font-size:80px;
+    color: white;
+}
+.first-p{
+    color:white;
+    font-size:28px;
+    text-align:center;
+}
+#feature-heading{
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+}
+#feature-p{
+    text-align: center;
+}
+#aboutus{
+    margin-left: 30px;
+    text-align: justify;
+}
+.started-2{
+    background-color:black;
+    color: white;
+}
+.started-2:hover{
+    border: 2px solid grey;
+    letter-spacing: 1mm;
+    color: white;
+    background-color: rgb(10, 3, 3);
+}
+#contact-header{
+    text-align:center;
+    font-size:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    color: black;
+}
+.submit-btn{
+    margin-top:25px;
+    background-color:black;
+    color:white;
+    border:1px solid black;
+    padding:5px 20px;
+    font-weight:500;
+    border-radius:0px;
+}
+.features-content{
+    margin-top: 30px;
+}
+.submit-btn:hover{
+    background-color: black;
+    color:white;
+    letter-spacing: 1mm;
+    border:1px solid BLACK;
+}
+#contactus{
+    margin-bottom: 40px;
+}
+#footer{
+    background-color: #0E0E0E;
+    margin-top:40px;
+}
+.footer-p{
+    color:#f5f2ef;
+    padding-top:10px;
+    padding-bottom:5px;
+    font-size:24px;
+    text-align: center;
+}
+.social-icon{
+    background-color:white;
+    color:black;
+    font-size:18px;
+    margin-left:10px;
+    padding:10px;
+    margin-top:10px;
+}
+@media (max-width:600px)
+{
+    #banner{
+        display: inline-block;
+        height: 400px;        
+    }
+    .first-header{
+        /* display: inline-block; */
+        font-size: 25px;
+    }
+    .first-p{
+        font-size: 20px;
+    }
+    #aboutus{
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .started-2{
+        margin-bottom: 20px;
+    }
+    .links{
+        margin-bottom:30px;
+    }
+
+}
+@media (min-width:600px) and (max-width:1000px)
+{
+
+}

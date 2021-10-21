@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../static/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>SignUp Form</title>
+</head>
+
+<body>
+    <section id="signup-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-lg-4">
+
+                </div>
+                <div class="col-md-5 col-sm-12 col-lg-5 signup-form">
+                    <h1 class="signup-title">
+                        Create Account
+                    </h1>
+                    <form action="{{url_for('signup')}}" method="POST">
+                        <div class="grp">
+                            <label for="username">Username</label>
+                            <input required type="text" class="form-control" id="username" name="username" placeholder="Create your username">
+                        </div>
+                        <div class="grp">
+                            <label for="email">Email Address</label>
+                            <input required type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="grp">
+                            <label for="passwd">Password</label>
+                            <input required type="password" class="form-control" name="password" id="passwd" placeholder="Password">
+                        </div>
+                        <div class="grp">
+                            <label for="confirmpasswd">Confirm Password</label>
+                            <input required type="password" id="confirmpasswd" class="form-control"
+                                placeholder="Confirm Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block submit-btn">Sign Up</button>
+                        <p class="already-p">
+                            Do you already have an account?
+                        </p>
+                    </form>
+                    <a href="{{url_for('login')}}"><button class="btn btn-block login-btn">Log in</button></a>
+                    <div class="or">OR</div>
+
+                    <a href="#" class="login-with-fb">
+                        <span class="icon fa fa-facebook"></span>
+                        Login with facebook
+                    </a>
+                    <a href="#" class="login-with-google">
+                        <span class="icon fa fa-google-plus"></span>
+                        Login with google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

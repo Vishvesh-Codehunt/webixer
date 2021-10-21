@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="dUvwe9QtEbW5taSNeXvOt6L3dTaBPBEVk74ftiABRo" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webixer</title>
+  <link rel="icon" href="/Images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style3.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+  <section id="navbar-top">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#0E0E0E;">
+      <a class="navbar-brand" href="#">Webixer</a>
+      <ul class="navbar-nav ml-auto ul-1">
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Log in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link signup" href="signup.html">sign up free</a>
+        </li>
+      </ul>
+
+      <button class="navbar-toggler" type="button" style="position:relative;left:10px;" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-2x fa-bars"
+            style="color: #EEAA7B;font-weight:500;font-size:34px;" aria-hidden="true"></i></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav left-ul">
+          <li class="nav-item">
+            <a class="nav-link left-nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link left-nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto ul-2">
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('login')}}">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link signup" href="{{url_for('signup')}}">sign up free</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- first-part  -->
+  <section id="first">
+    <div class="container">
+      <h1 class="first-header" data-aos="fade-right">
+        Create Websites, <br>
+        Make an Online Presence
+      </h1>
+      <p class="first-p" data-aos="fade-right">
+        Discover the platform that gives the freedom to develop a website for your business without having technical
+        knowledge with minimal steps at free of cost
+      </p>
+      <div style="text-align:center" data-aos="fade-right">
+        <button class="btn btn-lg start-btn">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- second  -->
+
+  <section id="second">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 col-12 col-lg-6">
+          <h1 class="second-header" data-aos="fade-right">
+            The Freedom to Create<br> the Websites You Want
+          </h1>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12 col-lg-6">
+          <p class="second-p" data-aos="fade-right">
+            Design and build your own high-quality websites. Whether you’re promoting your business, showcasing your
+            work, opening your store or starting a blog—you can do it all with the Wix website builder.
+          </p>
+
+          
+          <button class="btn btn-lg started-2" data-aos="fade-right">
+            <a href="{{url_for('signup')}}"> Get Started </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- website sections -->
+  <section id="websitesection">
+    <div class="panels ">
+      <div class="panel panel1">
+        <p>
+          <img src="" alt="Portfolio image ">
+        </p>
+        <p>Portfolio</p>
+        <p>
+          <img src="" alt="Portfolio image">
+        </p>
+      </div>
+      <div class="panel panel2">
+        <p>
+          <img src="..." alt="bussiness image">
+        </p>
+        <p>Bussiness</p>
+        <p>
+          <img src="..." alt="bussiness image">
+        </p>
+      </div>
+      
+      <div class="panel panel4">
+        <p> <img src="..." alt="Non-profit image"></p>
+        <p>NonProfit</p>
+        <p> <img src="..." alt="Non-profit image"></p>
+      </div>
+      
+    </div>
+
+  </section>
+
+  <!-- one link for all  -->
+  <section id="onelinkforall">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12 col-sm-12 col-lg-6">
+          <video class="video1 video-1-2" playsinline autoplay muted loop>
+            <source src="../static/video1.mp4" data-aos="fade-right" />
+          </video>
+          <div class="content-1">
+            <h1 class="link-header" data-aos="fade-right">
+              One Link for All Your Links
+            </h1>
+            <p class="link-p" data-aos="fade-right">
+              Connect all your accounts and reach your audience to help them discover all your important content.
+              To generate one link for all your links visit your profile.
+            </p>
+            <button class="btn btn-lg started-2" data-aos="fade-right">
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12 col-sm-12 col-lg-6 link-content">
+          <video class="video1 video-2" playsinline autoplay muted loop>
+            <source src="../static/video1.mp4" data-aos="fade-right" />
+          </video>
+          <div class="content-2">
+            <h1 class="link-header" data-aos="fade-right">
+              One Link for All Your Links
+            </h1>
+            <p class="link-p" data-aos="fade-right">
+              Connect all your accounts and reach your audience to help them discover all your important content.
+              To generate one link for all your links visit your profile.
+            </p>
+            <a href="{{url_for('signup')}}">
+            <button class="btn btn-lg started-2" data-aos="fade-right">
+              Get Started
+            </button></a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-12 col-lg-8">
+          <p class="footer-p">
+            Copyright © Title 2021. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-4 col-12 col-lg-4 links" style="text-align: center;">
+          <a href="#"><i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook social-icon" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter social-icon" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="arrow">
+    <a href="#navbar-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
+
+  <script>
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 240,
+      duration: 1000
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
